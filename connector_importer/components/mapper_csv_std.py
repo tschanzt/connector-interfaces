@@ -10,6 +10,7 @@ class ImportMapperCSVStd(Component):
     _inherit = 'importer.base.mapper'
     _usage = 'importer.mapper.csv.std'
 
+    _saved_key_mapping = {}
     @mapping
     def auto_mapping(self, record):
         """Generate the values automatically by removing internal keys."""
